@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2EACBA54-7AF8-4A90-ACA5-065EA4E4A001}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EigenProject</RootNamespace>
+    <AssemblyName>EigenProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBetalen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBetalen.Designer.cs">
+      <DependentUpon>FormBetalen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWinkelen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWinkelen.Designer.cs">
+      <DependentUpon>FormWinkelen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBetalen.resx">
+      <DependentUpon>FormBetalen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWinkelen.resx">
+      <DependentUpon>FormWinkelen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asparagus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aubergine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avocado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bacon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baguette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biscuit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueberries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boiled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bowl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bowl-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bread-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broccoli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabbage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\can.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\can-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\can-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candy-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cauliflower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cereals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheese-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cherries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chili.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coconut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-maker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cookies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corckscrew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corndog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croissant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cucumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cupcake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cupcake-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cupcake-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cutlery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dairy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dishes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doughnut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doughnut-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doughnut-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eggs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flour-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frappe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garlic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gingerbread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grinder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groceries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ham.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamburguer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamburguer-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hazelnut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honey-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hot-dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hot-dog-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice-cream-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jam-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jawbreaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jelly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kebab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kebab-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kebab-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knife-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knife-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knife-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ladle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lemon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lemon-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meat-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meat-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushrooms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustard-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustard-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octopus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olives.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onion-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ornating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pancakes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pancakes-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasta-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepper-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pickles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pineapple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pistachio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pomegranate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popsicle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pot-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pot-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potatoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potatoes-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potatoes-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pretzel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pudding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raspberry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\risotto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rolling-pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salami.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salmon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandwich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandwich-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sausage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shrimp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slotted-spoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sorbet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaguetti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spatula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spatula-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stew-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strainer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strawberry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sushi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sushi-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sushi-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tea-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teapot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teapot-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teaspoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenderizer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watermelon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atos-yomani--1009x1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kassa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-cash-register-point-of-sale-sales-barcode-scanners-er-42-m-cash-register-netnest-australia-5b6fac4240b676.7498655015340452502651.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
